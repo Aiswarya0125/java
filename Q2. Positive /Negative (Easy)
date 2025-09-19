@@ -1,0 +1,16 @@
+Q2. Positive / Negative (Easy)
+public class num {
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int a = num.nextInt();
+        if (a > 0) {
+            System.out.println(a + " is a positive number");
+        } 
+        else{
+            System.out.println(a + " is a negative number");
+        }
+        
+        }
+    }
+
