@@ -1,0 +1,16 @@
+Write a program to check whether a number is Even or Odd.
+mport java.util.Scanner;
+
+public class aishu {
+
+    public static void main(String[] args) {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int a = num.nextInt();
+        if (a % 2 == 0) {
+            System.out.println(a + " is a even number");
+        } else {
+            System.out.println(a + " is a not even number");
+        }
+    }
+}
