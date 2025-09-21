@@ -1,0 +1,17 @@
+Max & Min of 2 Numbers 
+import java.util.Scanner;
+
+public class minmax {
+	public static void main(String[] args) {
+		
+		Scanner kbd = new Scanner(System.in);
+		 
+		        int a = kbd.nextInt();
+		        int b = kbd.nextInt();
+
+		        int max = (a > b) ? a : b;
+		        int min = (a < b) ? a : b;
+		        System.out.println("Max=" + max + " Min=" + min);
+
+		        }
+		}
