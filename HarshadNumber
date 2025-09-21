@@ -1,0 +1,12 @@
+Check whether the given number is a Harshad Number.
+import java.util.Scanner;
+public class HarshadNumber {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt(), sum=0, digit, temp = n;
+		while(n>0) {
+			digit = n %10;
+			sum += digit;
+			n /= 10;
+		}
+	}
