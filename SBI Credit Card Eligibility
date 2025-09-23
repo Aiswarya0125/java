@@ -1,0 +1,17 @@
+SBI Credit Card Eligibility
+public class example3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a1 = sc.nextInt();
+        int a2 = sc.nextInt();
+        int emp = sc.nextInt();
+        int sal = sc.nextInt();
+        if (a1 >= 21 && a1 <= 60 && a2 > 18 && emp <= 4 && sal < 300000) {
+            System.out.println("Yes. You are eligible for SBI credit cards.");
+        } else {
+            System.out.println("Yes. You are not eligible for SBI credit cards.");
+        }
+
+    }
+
+}
