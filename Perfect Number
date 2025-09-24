@@ -1,0 +1,43 @@
+ Perfect Number (Medium)
+Check whether a number is a Perfect Number.
+(A Perfect Number is equal to the sum of its proper divisors.)
+Input format :
+An integer.
+Output format :
+Perfect / Not Perfect.
+Sample test cases :
+Input :
+28
+Output :
+Perfect Number
+Input :
+12
+Output :
+Not Perfect Number
+import java.util.Scanner;
+
+public class PerfectNumberCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: an integer
+        int number = scanner.nextInt();
+        int sum = 0;
+
+        // Find proper divisors and calculate their sum
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        // Output: check if it's a perfect number
+        if (sum == number) {
+            System.out.println("Perfect Number");
+        } else {
+            System.out.println("Not Perfect Number");
+        }
+
+        scanner.close();
+    }
+}
