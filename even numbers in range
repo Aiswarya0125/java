@@ -1,0 +1,31 @@
+Even Numbers in Range (Easy)
+Display even numbers between a given range inclusive of both start and end.
+Input format :
+Two integers (start and end).
+Output format :
+Even numbers.
+Sample test cases :
+Input :
+1 10
+Output :
+2 4 6 8 10
+import java.util.Scanner;
+
+public class EvenNumbersInRange {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: start and end values
+        int start = scanner.nextInt();
+        int end = scanner.nextInt();
+
+        // Output: even numbers in the range
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        scanner.close();
+    }
+}
